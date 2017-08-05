@@ -1,0 +1,34 @@
+{
+    "name": "gulp-amp",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "gulp"
+    },
+    "author": "rtxrulez",
+    "license": "ISC",
+    "config": {
+        "src": {
+            "styles": "src/styles/"
+        },
+        "build": {
+            "css": "build/css"
+        }
+    },
+    "browserslist": [
+        "> 1%",
+        "last 2 versions"
+    ],
+    "devDependencies": {
+        "autoprefixer": "^7.1.2",
+        "browser-sync": "^2.18.13",
+        "gulp": "^3.9.1",
+        "gulp-postcss": "^7.0.0",
+        "gulp-replace": "^0.6.1",
+        "gulp-sass": "^3.1.0",
+        "gulp-sourcemaps": "^2.6.0",
+        "require-dir": "^0.3.2",
+        "run-sequence": "^2.1.0"
+    }
+}
