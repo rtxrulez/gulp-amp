@@ -1,6 +1,7 @@
 body {
   background: white;
-  font-size: 14px; }
+  font-size: 14px;
+  font-family: Helvetica; }
 
 .header {
   padding: 10px;
@@ -13,5 +14,9 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+
+.section-first {
+  font-size: 36px;
+  padding: 20px 15px; }
 
 /*# sourceMappingURL=main.css.map */
