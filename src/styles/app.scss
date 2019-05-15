@@ -1,3 +1,5 @@
-body {
-    background: purple;
-}
+@import 'blocks/reset';
+@import 'vars';
+@import 'blocks/btn';
+@import 'main';
+
