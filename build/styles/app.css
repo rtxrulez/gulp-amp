@@ -82,6 +82,7 @@ table {
 body {
   background: white;
   font-size: 14px;
+  line-height: 1.2;
   font-family: Helvetica; }
 
 h1, h2, h3, h4 {
@@ -132,7 +133,7 @@ img {
   font-size: 20px;
   padding-right: 30px; }
 
-.work-head {
+.section-head {
   text-align: center;
   padding: 20px 15px;
   font-size: 28px; }
@@ -147,8 +148,8 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 20px;
-  padding: 0 15px; }
+  padding: 0 15px;
+  padding-bottom: 20px; }
 
 .worklist-head {
   display: -webkit-box;
@@ -163,5 +164,22 @@ img {
 .worklist-content {
   min-width: 145px;
   width: 100%; }
+
+.worklist--mobile {
+  text-align: left; }
+  .worklist--mobile .worklist-content {
+    min-width: 60px; }
+  .worklist--mobile .worklist-head {
+    padding-top: 0;
+    padding-bottom: 0; }
+
+.section3 {
+  background: #E5E5E5;
+  text-align: center;
+  padding-bottom: 20px; }
+  .section3 .btn {
+    max-width: 220px;
+    font-size: 20px;
+    line-height: 1.1; }
 
 /*# sourceMappingURL=app.css.map */
