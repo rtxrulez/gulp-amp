@@ -84,6 +84,13 @@ body {
   font-size: 14px;
   font-family: Helvetica; }
 
+h1, h2, h3, h4 {
+  color: #1D6C93;
+  font-weight: 700; }
+
+img {
+  max-width: 100%; }
+
 .header {
   padding: 10px 15px;
   min-height: 65px;
@@ -124,5 +131,37 @@ body {
   color: #1D6C93;
   font-size: 20px;
   padding-right: 30px; }
+
+.work-head {
+  text-align: center;
+  padding: 20px 15px;
+  font-size: 28px; }
+
+.worklist-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 0 15px; }
+
+.worklist-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 15px;
+  font-size: 18px; }
+
+.worklist-content {
+  min-width: 145px;
+  width: 100%; }
 
 /*# sourceMappingURL=app.css.map */

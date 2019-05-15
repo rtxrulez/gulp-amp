@@ -4,6 +4,15 @@ body {
     font-family: Helvetica;
 }
 
+h1,h2,h3,h4 {
+    color: $text-primary;
+    font-weight: 700;
+}
+
+img {
+    max-width: 100%;
+}
+
 .header {
     padding: 10px 15px;
     min-height: 65px;
@@ -44,4 +53,30 @@ body {
     color: $text-primary;
     font-size: 20px;
     padding-right: 30px;
+}
+
+.work-head {
+    text-align: center;
+    padding: 20px 15px;
+    font-size: 28px;
+}
+
+.worklist-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 0 15px;
+}
+
+.worklist-head {
+    display: flex;
+    align-items: center;
+    padding: 20px 15px;
+    font-size: 18px;
+}
+
+.worklist-content {
+    min-width: 145px;
+    width: 100%;
 }
