@@ -1,6 +1,9 @@
 var gulp = require('gulp');
+var runSequence = require('run-sequence');
 
-gulp.task('build', function() {
-  // place code for your default task here
-  console.log('build')
+gulp.task('build', function () {
+  runSequence(
+    'copy',
+    'styles',
+  );
 });

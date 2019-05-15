@@ -5,9 +5,10 @@ var postcss = require('gulp-postcss');
 var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('autoprefixer');
 var runseq = require('run-sequence');
-console.log("config", config);
 
-gulp.task('sass', function() {
+
+gulp.task('styles', function() {
+    console.log('styles!!!')
     return gulp.src(config.src.styles + '**/*.{scss,sass}')
     .pipe(sass().on('error', sass.logError))
     .pipe(sourcemaps.init())
@@ -16,6 +17,6 @@ gulp.task('sass', function() {
     .pipe(gulp.dest(config.build.css));
 });
 
-gulp.task('sass:watch', function() {
-    gulp.watch(config.src.styles + '**/*.{scss, sass}', ()=>runseq('sass', 'inject'));
+gulp.task('styles:watch', function() {
+    gulp.watch(config.src.styles + '**/*.{scss, sass}', ()=>runseq('styles', 'inject'));
 });

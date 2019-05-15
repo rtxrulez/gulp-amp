@@ -1,1 +1,0 @@
-{"version":3,"sources":["app.css"],"names":[],"mappings":"AAAA;EACE,kBAAkB;EAClB,cAAc,EAAE","file":"app.css","sourcesContent":["body {\n  background: green;\n  display: grid; }\n"]}

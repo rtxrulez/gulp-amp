@@ -4,7 +4,8 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "start": "gulp"
+        "start": "gulp",
+        "build": "gulp build"
     },
     "author": "rtxrulez",
     "license": "ISC",
@@ -13,7 +14,7 @@
             "styles": "src/styles/"
         },
         "build": {
-            "css": "build/css"
+            "css": "build/styles"
         }
     },
     "browserslist": [

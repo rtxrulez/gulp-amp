@@ -4,9 +4,9 @@ var runSequence = require('run-sequence');
 gulp.task('default', function() {
     runSequence(
         'copy',
-        'sass',
+        'styles',
         'server',
         'copy:watch',
-        'sass:watch'
+        'styles:watch'
     );
 });
