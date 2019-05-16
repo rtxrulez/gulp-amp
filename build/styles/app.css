@@ -698,7 +698,7 @@ section {
 
 .text-block {
   display: block;
-  text-align: center; }
+  text-align: left; }
   .text-block .list-head {
     color: white; }
 
