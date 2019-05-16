@@ -2,7 +2,7 @@ body {
     background: white;
     font-size: 14px;
     line-height: 1.2;
-    font-family: Helvetica;
+    font-family: Roboto, Arial, Helvetica;
 }
 
 h1,h2,h3,h4 {
@@ -12,6 +12,10 @@ h1,h2,h3,h4 {
 
 img {
     max-width: 100%;
+}
+
+a {
+    color: $text-primary;
 }
 
 section {
@@ -38,7 +42,6 @@ section {
     min-height: calc(100vh - 65px);
 
     .btn {
-        max-width: 200px;
         font-size: 20px;
         line-height: 1.1;
     }
@@ -184,7 +187,9 @@ section {
     padding: 20px 15px;
     text-align: center;
     color: $text-primary;
-
+    border: 2px solid #1d6c93;
+    border-radius: $border-radius;
+    box-shadow: $shadow-block;
 }
 
 .text-block {
@@ -194,4 +199,26 @@ section {
     .list-head {
         color: white;
     }
+}
+
+.footer {
+    padding: 30px 15px;
+    text-align: center;
+    color: $text-primary;
+    background-color: $gray-light;
+}
+
+.contacts-item {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    color: $text-primary;
+    display: block;
+    text-decoration: none;
+}
+
+.copy {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
 }

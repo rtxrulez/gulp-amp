@@ -6,12 +6,13 @@
     vertical-align: middle;
     cursor: pointer;
     background-image: none;
-    padding: 9px 12px;
+    padding: 9px 15px;
     font-size: 14px;
     line-height: 1.428571429;
     border-radius: $border-radius;
     user-select: none;
     text-decoration: none;
+    
 }
 
 .btn:hover,
@@ -22,6 +23,7 @@
 .btn-primary {
     background-color: $primary;
     color: white;
+    box-shadow: 0 0.2rem 0.3rem 0 rgba(0,0,0,0.3);
 }
 
 .btn-light {
