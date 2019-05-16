@@ -539,6 +539,11 @@ h1, h2, h3, h4 {
 img {
   max-width: 100%; }
 
+section {
+  font-size: 18px; }
+  section .btn {
+    max-width: 220px; }
+
 .header {
   padding: 10px 15px;
   min-height: 65px;
@@ -582,7 +587,7 @@ img {
 
 .section-head {
   text-align: center;
-  padding: 15px;
+  padding: 20px 15px;
   font-size: 26px; }
 
 .worklist-item {
@@ -666,6 +671,27 @@ img {
   margin-bottom: 5px; }
 
 .section5 {
-  background-color: #F2C4C4; }
+  background-color: #F2C4C4;
+  color: #1D6C93; }
+
+.section6 {
+  background-color: #1D6C93;
+  color: white;
+  padding-bottom: 20px; }
+  .section6 .section-head {
+    color: white; }
+
+.goto-form {
+  background-color: white;
+  margin: 15px;
+  padding: 20px 15px;
+  text-align: center;
+  color: #1D6C93; }
+
+.text-block {
+  display: block;
+  text-align: center; }
+  .text-block .list-head {
+    color: white; }
 
 /*# sourceMappingURL=app.css.map */
