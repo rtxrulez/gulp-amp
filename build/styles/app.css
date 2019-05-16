@@ -610,9 +610,12 @@ img {
     line-height: 1.1; }
 
 .section4 {
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 15px; }
   .section4 img {
     margin: 0px 15px 15px 0px; }
+  .section4 .btn {
+    max-width: 215px; }
 
 .list-head {
   font-size: 20px; }
@@ -628,7 +631,9 @@ img {
       content: '-';
       position: absolute;
       left: 0;
-      top: 0; }
+      top: -2px;
+      font-size: 20px;
+      font-weight: bold; }
   .list-default li + li {
     margin-top: 10px; }
 

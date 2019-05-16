@@ -108,9 +108,14 @@ img {
 
 .section4 {
     text-align: center;
+    padding-bottom: 15px;
 
     img {
         margin: 0px 15px 15px 0px;
+    }
+
+    .btn {
+        max-width: 215px;
     }
 }
 
@@ -131,7 +136,9 @@ img {
             content: '-';
             position: absolute;
             left: 0;
-            top: 0;
+            top: -2px;
+            font-size:20px;
+            font-weight: bold;
         }
     }
     li + li {
