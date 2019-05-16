@@ -506,6 +506,26 @@ b {
   color: #1D6C93;
   border: 1px solid #1D6C93; }
 
+.owl-carousel .owl-item {
+  text-align: center; }
+
+.owl-carousel .owl-dots {
+  padding: 20px;
+  text-align: center; }
+
+.owl-carousel button.owl-dot {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid transparent; }
+  .owl-carousel button.owl-dot.active {
+    border-color: #1D6C93; }
+
+.owl-carousel button.owl-dot + button.owl-dot {
+  margin-left: 20px; }
+
 body {
   background: white;
   font-size: 14px;
@@ -611,7 +631,7 @@ img {
 
 .section4 {
   text-align: center;
-  padding-bottom: 15px; }
+  padding-bottom: 20px; }
   .section4 img {
     margin: 0px 15px 15px 0px; }
   .section4 .btn {
@@ -644,5 +664,8 @@ img {
   display: block;
   color: #1D6C93;
   margin-bottom: 5px; }
+
+.section5 {
+  background-color: #F2C4C4; }
 
 /*# sourceMappingURL=app.css.map */
