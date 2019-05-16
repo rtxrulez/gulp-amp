@@ -58,8 +58,8 @@ img {
 
 .section-head {
     text-align: center;
-    padding: 20px 15px;
-    font-size: 28px;
+    padding: 15px;
+    font-size: 26px;
 }
 
 .worklist-item {
@@ -104,4 +104,46 @@ img {
         font-size: 20px;
         line-height: 1.1;
     }
+}
+
+.section4 {
+    text-align: center;
+
+    img {
+        margin: 0px 15px 15px 0px;
+    }
+}
+
+.list-head {
+    font-size: 20px;
+}
+
+.list-default {
+    padding: 15px;
+    color: $text-primary;
+    text-align: left;
+
+    li {
+        position: relative;
+        padding-left: 10px;
+
+        &::before {
+            content: '-';
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    }
+    li + li {
+        margin-top: 10px;
+    }
+}
+
+.list-default-head {
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    color: $text-primary;
+    margin-bottom: 5px;
 }
