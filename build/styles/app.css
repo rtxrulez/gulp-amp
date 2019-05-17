@@ -491,7 +491,8 @@ b {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  text-decoration: none; }
+  text-decoration: none;
+  border: 0; }
 
 .btn:hover,
 .btn:focus {
@@ -515,6 +516,12 @@ b {
   background: #F8DA69;
   color: #1D6C93;
   font-weight: bold; }
+
+.btn-success {
+  background: #5EC68B;
+  color: white;
+  -webkit-box-shadow: 0 0.2rem 0.3rem 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0.2rem 0.3rem 0 rgba(0, 0, 0, 0.3); }
 
 .owl-carousel .owl-item {
   text-align: center; }
@@ -556,6 +563,13 @@ section {
   font-size: 18px; }
   section .btn {
     max-width: 220px; }
+
+.form-control {
+  border: 1px solid #1D6C93;
+  border-radius: 3px;
+  height: 44px;
+  color: #1D6C93;
+  padding: 0 15px; }
 
 .header {
   padding: 10px 15px;
@@ -764,5 +778,84 @@ section {
     display: inline-block; }
   .sectionForm2 p {
     margin-top: 40px; }
+
+.support-park {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 15px 0 20px 0; }
+  .support-park a {
+    color: #5EC68B;
+    display: inline-block;
+    margin-left: 10px; }
+
+.form-contacts-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 24px;
+  text-align: center;
+  padding: 0 15px 20px 15px; }
+  .form-contacts-head img {
+    display: inline-block;
+    margin-right: 10px; }
+
+.form-contacts {
+  margin: 20px 15px;
+  padding: 15px;
+  border: 2px solid #1D6C93;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0.3rem 0.4rem 0 rgba(96, 96, 96, 0.5);
+          box-shadow: 0 0.3rem 0.4rem 0 rgba(96, 96, 96, 0.5);
+  color: #1D6C93;
+  font-weight: 700; }
+  .form-contacts label {
+    font-size: 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 20px; }
+
+.call-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .call-me a {
+    display: inline-block;
+    text-decoration: none;
+    color: #E66C55;
+    font-size: 18px;
+    min-width: 200px; }
+
+.form-info-list li {
+  position: relative;
+  padding-left: 35px;
+  padding-bottom: 10px; }
+  .form-info-list li:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    background: url("../images/check-list.svg") no-repeat center;
+    width: 24px;
+    height: 24px; }
 
 /*# sourceMappingURL=app.css.map */
