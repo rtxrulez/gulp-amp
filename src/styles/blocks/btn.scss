@@ -12,7 +12,6 @@
     border-radius: $border-radius;
     user-select: none;
     text-decoration: none;
-    
 }
 
 .btn:hover,
@@ -24,6 +23,7 @@
     background-color: $primary;
     color: white;
     box-shadow: 0 0.2rem 0.3rem 0 rgba(0,0,0,0.3);
+    border: 0.1rem solid #0000;
 }
 
 .btn-light {
@@ -31,4 +31,10 @@
     color: $text-primary;
     border: 1px solid $text-primary;
     box-shadow: 0 0.2rem 0.3rem 0 rgba(0,0,0,0.3);
+}
+
+.btn-yellow {
+    background: $yellow;
+    color: $text-primary;
+    font-weight: bold;
 }

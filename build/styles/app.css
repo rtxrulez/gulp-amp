@@ -501,7 +501,8 @@ b {
   background-color: #E66C55;
   color: white;
   -webkit-box-shadow: 0 0.2rem 0.3rem 0 rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0.2rem 0.3rem 0 rgba(0, 0, 0, 0.3); }
+          box-shadow: 0 0.2rem 0.3rem 0 rgba(0, 0, 0, 0.3);
+  border: 0.1rem solid #0000; }
 
 .btn-light {
   background-color: transparent;
@@ -509,6 +510,11 @@ b {
   border: 1px solid #1D6C93;
   -webkit-box-shadow: 0 0.2rem 0.3rem 0 rgba(0, 0, 0, 0.3);
           box-shadow: 0 0.2rem 0.3rem 0 rgba(0, 0, 0, 0.3); }
+
+.btn-yellow {
+  background: #F8DA69;
+  color: #1D6C93;
+  font-weight: bold; }
 
 .owl-carousel .owl-item {
   text-align: center; }
@@ -722,5 +728,41 @@ section {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 20px; }
+
+.sectionForm1 {
+  background: #1D6C93;
+  color: white;
+  padding-bottom: 80px; }
+  .sectionForm1 .section-head {
+    color: white;
+    text-align: center;
+    padding: 20px 15px; }
+
+.sectionForm1-text {
+  padding: 20px 15px; }
+
+.app-link-list {
+  font-size: 0;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 25px; }
+  .app-link-list img {
+    max-width: 135px; }
+  .app-link-list a {
+    display: inline-block; }
+    .app-link-list a:last-child {
+      margin-left: 15px; }
+
+.leave-contacts {
+  text-align: center;
+  margin-top: -30px; }
+
+.sectionForm2 {
+  padding: 0px 15px 20px 15px; }
+  .sectionForm2 .btn {
+    max-width: 90%;
+    display: inline-block; }
+  .sectionForm2 p {
+    margin-top: 40px; }
 
 /*# sourceMappingURL=app.css.map */

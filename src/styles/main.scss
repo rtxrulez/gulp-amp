@@ -222,3 +222,56 @@ section {
     font-weight: bold;
     margin-bottom: 20px;
 }
+
+.sectionForm1 {
+    background: $text-primary;
+    color: white;
+    padding-bottom: 80px;
+
+    .section-head {
+        color: white;
+        text-align: center;
+        padding: 20px 15px;
+    }
+}
+
+.sectionForm1-text {
+    padding: 20px 15px;
+}
+
+.app-link-list {
+    font-size: 0;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 25px;
+
+    img {
+        max-width: 135px;
+    }
+
+    a {
+        display: inline-block;
+
+        &:last-child {
+            margin-left: 15px
+        }
+    }
+}
+
+.leave-contacts {
+    text-align: center;
+    margin-top: -30px;
+}
+
+.sectionForm2 {
+    padding: 0px 15px 20px 15px;
+
+    .btn {
+        max-width: 90%;
+        display: inline-block;
+    }
+
+    p {
+        margin-top: 40px;
+    }
+}
