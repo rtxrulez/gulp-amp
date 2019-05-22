@@ -944,4 +944,15 @@ section {
   .section2 {
     padding: 20px 0 40px 0; } }
 
+.list-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.list-item {
+  width: 33.33%;
+  padding: 0 15px; }
+
 /*# sourceMappingURL=app.css.map */
