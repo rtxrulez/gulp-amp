@@ -102,8 +102,8 @@ section {
     font-size: 26px;
     
     @media (min-width: $screen-mobile) {
-        margin-top: 40px;
-        margin-bottom: 60px;
+        padding-top: 40px;
+        padding-bottom: 60px;
     }
 }
 
@@ -261,11 +261,16 @@ section {
     .section-head {
         color: white;
     }
+
+    .text-block {
+        text-align: center;
+    }
 }
 
 .goto-form {
     background-color: white;
-    margin: 15px;
+    max-width: 400px;
+    margin: 40px auto 20px auto;
     padding: 20px 15px;
     text-align: center;
     color: $text-primary;
@@ -277,6 +282,7 @@ section {
 .text-block {
     display: block;
     text-align: left;
+    line-height: 1.3;
 
     .list-head {
         color: white;
@@ -466,4 +472,14 @@ section {
 .list-item {
     width: 33.33%;
     padding: 0 15px;
+}
+
+.owl-carousel {
+    .owl-item {
+        img {
+            margin: 0 auto;
+            max-height: 200px;
+            width: auto;
+        }
+    }
 }

@@ -10,8 +10,8 @@ var runseq = require('run-sequence');
 gulp.task('styles', function() {
     console.log('styles!!!')
     return gulp.src(config.src.styles + '**/*.{scss,sass}')
-    .pipe(sass().on('error', sass.logError))
     .pipe(sourcemaps.init())
+    .pipe(sass().on('error', sass.logError))
     .pipe(postcss([ autoprefixer() ]))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(config.build.css));
