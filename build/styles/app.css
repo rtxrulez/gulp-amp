@@ -614,6 +614,13 @@ section {
   background: url("../images/dog.png") no-repeat center;
   background-size: cover;
   font-weight: bold; }
+  @media (max-width: 768px) {
+    .section-first {
+      min-height: calc(100vh - 65px); } }
+  @media (min-width: 768px) {
+    .section-first {
+      padding-bottom: 100px;
+      background-image: url("../images/1tdesktopNoName.jpg"); } }
   @media (min-width: 768px) {
     .section-first > .container {
       display: -webkit-box;
@@ -630,13 +637,6 @@ section {
           -ms-flex-align: center;
               align-items: center;
       min-height: 500px; } }
-  @media (max-width: 768px) {
-    .section-first {
-      min-height: calc(100vh - 65px); } }
-  @media (min-width: 768px) {
-    .section-first {
-      padding-bottom: 100px;
-      background-image: url("../images/dog-desktop.png"); } }
   .section-first .btn {
     display: inline-block;
     font-size: 20px;

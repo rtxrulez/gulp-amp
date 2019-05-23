@@ -77,6 +77,16 @@ section {
     background-size: cover;
     font-weight: bold;
 
+    
+    @media (max-width: $screen-mobile) {
+        min-height: calc(100vh - 65px);
+    }
+    
+    @media (min-width: $screen-mobile) {
+        padding-bottom: 100px;
+        background-image: url($path + '1tdesktopNoName.jpg');
+    }
+    
     > .container {
         @media (min-width: $screen-mobile) {
             display: flex;
@@ -86,16 +96,6 @@ section {
             min-height: 500px;
         }
     }
-    
-    @media (max-width: $screen-mobile) {
-        min-height: calc(100vh - 65px);
-    }
-
-    @media (min-width: $screen-mobile) {
-        padding-bottom: 100px;
-        background-image: url($path + 'dog-desktop.png');
-    }
-
     .btn {
         display: inline-block;
         font-size: 20px;
