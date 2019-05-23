@@ -546,7 +546,7 @@ b {
 body {
   font-size: 14px;
   line-height: 1.2;
-  font-family: Roboto, Arial, Helvetica;
+  font-family: "Neucha", cursive, Roboto, Arial;
   background: #fff; }
 
 h1, h2, h3, h4 {
@@ -562,7 +562,30 @@ a {
 section {
   font-size: 18px; }
   section .btn {
-    max-width: 220px; }
+    max-width: 220px;
+    font-size: 18px; }
+
+.btn-home {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #E66C55;
+  text-decoration: none;
+  font-size: 20px; }
+  .btn-home:hover, .btn-home:focus {
+    text-decoration: none;
+    opacity: .8; }
+  .btn-home::before {
+    content: '';
+    display: block;
+    background: url("../images/arrow-left.svg") no-repeat center;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px; }
 
 .form-control {
   border: 1px solid #1D6C93;
@@ -591,6 +614,22 @@ section {
   background: url("../images/dog.png") no-repeat center;
   background-size: cover;
   font-weight: bold; }
+  @media (min-width: 768px) {
+    .section-first > .container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      min-height: 500px; } }
   @media (max-width: 768px) {
     .section-first {
       min-height: calc(100vh - 65px); } }
@@ -599,16 +638,26 @@ section {
       padding-bottom: 100px;
       background-image: url("../images/dog-desktop.png"); } }
   .section-first .btn {
+    display: inline-block;
     font-size: 20px;
-    line-height: 1.1; }
+    line-height: 1;
+    padding-top: 15px; }
+    @media (min-width: 768px) {
+      .section-first .btn {
+        margin-top: 65px; } }
   @media (min-width: 768px) {
     .section-first {
-      text-align: center; } }
+      text-align: center;
+      min-height: 630px;
+      padding: 60px 15px 15px 15px; } }
 
 .section-header {
   font-size: 32px;
   font-weight: bold;
-  margin: 0 0 20px 0; }
+  margin: 0 0 15px 0; }
+  @media (min-width: 768px) {
+    .section-header {
+      font-size: 64px; } }
 
 .section-small {
   font-size: 18px;
@@ -616,6 +665,10 @@ section {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-bottom: 150px;
   font-weight: normal; }
+  @media (min-width: 768px) {
+    .section-small {
+      max-width: 1024px;
+      margin: 0 auto; } }
 
 .btn-to-bottom {
   background: url("../images/down.svg") no-repeat 90% center;
@@ -646,9 +699,6 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -660,21 +710,29 @@ section {
       -webkit-box-orient: vertical;
       -webkit-box-direction: reverse;
           -ms-flex-direction: column-reverse;
-              flex-direction: column-reverse; } }
+              flex-direction: column-reverse;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
   .worklist-item img {
     display: block;
     margin: 0 auto; }
 
 .worklist-head {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding: 20px 15px;
   font-size: 18px;
   font-weight: normal; }
+  @media (min-width: 768px) {
+    .worklist-head {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
+  @media (max-width: 768px) {
+    .worklist-head {
+      padding-left: 0; } }
 
 .worklist-content {
   min-width: 145px;
@@ -696,6 +754,12 @@ section {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 20px; }
+  @media (max-width: 768px) {
+    .worklist-img {
+      width: 75px;
+      height: 75px;
+      margin-right: 15px;
+      margin-top: 0; } }
   .worklist-img img {
     display: block;
     margin: 0 auto;
@@ -712,11 +776,15 @@ section {
     padding-top: 0;
     padding-bottom: 0; }
   .worklist--mobile .worklist-item {
-    width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
+    padding-left: 0; }
+    @media (min-width: 768px) {
+      .worklist--mobile .worklist-item {
+        width: 100%;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        padding-left: 15px; } }
 
 .section3 {
   background: url("../images/bg-gray.png") repeat center;
@@ -777,6 +845,7 @@ section {
   .section6 .section-head {
     color: white; }
   .section6 .text-block {
+    padding: 0 15px;
     text-align: center; }
 
 .goto-form {
@@ -812,6 +881,9 @@ section {
   display: block;
   text-decoration: none; }
 
+.contacts-address {
+  margin-bottom: 0; }
+
 .copy {
   font-size: 20px;
   font-weight: bold;
@@ -828,6 +900,9 @@ section {
 
 .sectionForm1-text {
   padding: 20px 15px; }
+  @media (min-width: 768px) {
+    .sectionForm1-text {
+      text-align: center; } }
 
 .app-link-list {
   font-size: 0;
@@ -848,7 +923,7 @@ section {
 .sectionForm2 {
   padding: 0px 15px 20px 15px; }
   .sectionForm2 .btn {
-    max-width: 90%;
+    max-width: 350px;
     display: inline-block; }
   .sectionForm2 p {
     margin-top: 40px; }
@@ -860,11 +935,19 @@ section {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin: 15px 0 20px 0; }
+  margin: 20px 0 40px 0; }
   .support-park a {
     color: #5EC68B;
     display: inline-block;
-    margin-left: 10px; }
+    margin-left: 10px;
+    text-decoration: none; }
+    .support-park a:hover, .support-park a:focus {
+      opacity: .8; }
+
+.sectionForm2 {
+  margin: 0 auto;
+  max-width: 780px;
+  text-align: center; }
 
 .form-contacts-head {
   display: -webkit-box;
@@ -883,17 +966,21 @@ section {
     display: inline-block;
     margin-right: 10px; }
 
+.sectionForm3 {
+  padding: 20px 15px; }
+
 .form-contacts {
-  margin: 20px 15px;
+  margin: auto;
   padding: 15px;
   border: 2px solid #1D6C93;
   border-radius: 3px;
   -webkit-box-shadow: 0 0.3rem 0.4rem 0 rgba(96, 96, 96, 0.5);
           box-shadow: 0 0.3rem 0.4rem 0 rgba(96, 96, 96, 0.5);
   color: #1D6C93;
-  font-weight: 700; }
+  font-weight: 700;
+  max-width: 620px; }
   .form-contacts label {
-    font-size: 18px;
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -903,7 +990,18 @@ section {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-bottom: 20px; }
+    margin-bottom: 30px;
+    font-size: 18px; }
+  .form-contacts .btn {
+    max-width: 350px; }
+  .form-contacts .form-control {
+    width: 100%;
+    max-width: 350px; }
+
+.or {
+  position: absolute;
+  color: #E66C55;
+  bottom: -23px; }
 
 .call-me {
   display: -webkit-box;
@@ -911,7 +1009,8 @@ section {
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  text-align: right; }
   .call-me a {
     display: inline-block;
     text-decoration: none;
@@ -921,8 +1020,8 @@ section {
 
 .form-info-list li {
   position: relative;
-  padding-left: 35px;
-  padding-bottom: 10px; }
+  padding-left: 40px;
+  padding-bottom: 20px; }
   .form-info-list li:before {
     content: '';
     display: inline-block;
@@ -955,9 +1054,10 @@ section {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
 
-.list-item {
-  width: 33.33%;
-  padding: 0 15px; }
+@media (min-width: 768px) {
+  .list-item {
+    padding: 0 15px;
+    width: 33.33%; } }
 
 .owl-carousel .owl-item img {
   margin: 0 auto;

@@ -1,7 +1,7 @@
 body {
     font-size: 14px;
     line-height: 1.2;
-    font-family: Roboto, Arial, Helvetica;
+    font-family: $font-family;
     background: #fff;
 }
 
@@ -23,6 +23,31 @@ section {
 
     .btn {
         max-width: 220px;
+        font-size: 18px;
+    }
+}
+
+.btn-home {
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: $orange;
+    text-decoration: none;
+    font-size: 20px;
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        opacity: .8;
+    }
+
+    &::before {
+        content: '';
+        display: block;
+        background: url($path + 'arrow-left.svg') no-repeat center;
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
     }
 }
 
@@ -51,6 +76,16 @@ section {
     background: url($path + 'dog.png') no-repeat center;
     background-size: cover;
     font-weight: bold;
+
+    > .container {
+        @media (min-width: $screen-mobile) {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 500px;
+        }
+    }
     
     @media (max-width: $screen-mobile) {
         min-height: calc(100vh - 65px);
@@ -62,19 +97,31 @@ section {
     }
 
     .btn {
+        display: inline-block;
         font-size: 20px;
-        line-height: 1.1;
+        line-height: 1;
+        padding-top: 15px;
+
+        @media (min-width: $screen-mobile) {
+            margin-top: 65px;
+        }
     }
 
     @media (min-width: $screen-mobile) {
         text-align: center;
+        min-height: 630px;
+        padding: 60px 15px 15px 15px;
     }
 }
 
 .section-header {
     font-size: 32px;
     font-weight: bold;
-    margin: 0 0 20px 0;
+    margin: 0 0 15px 0;
+
+    @media (min-width: $screen-mobile) {
+        font-size: 64px;
+    }
 }
 
 .section-small {
@@ -83,6 +130,11 @@ section {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     margin-bottom: 150px;
     font-weight: normal;
+
+    @media (min-width: $screen-mobile) {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
 }
 
 .btn-to-bottom {
@@ -115,7 +167,6 @@ section {
 
 .worklist-item {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     padding: 0 15px;
     padding-bottom: 20px;
@@ -123,6 +174,7 @@ section {
     @media (min-width: $screen-mobile) {
         width: 50%;
         flex-direction: column-reverse;
+        align-items: center;
     }
 
     img {
@@ -132,11 +184,18 @@ section {
 }
 
 .worklist-head {
-    display: flex;
-    align-items: center;
     padding: 20px 15px;
     font-size: 18px;
     font-weight: normal;
+
+    @media (min-width: $screen-mobile) {
+        display: flex;
+        align-items: center;
+    }
+
+    @media (max-width: $screen-mobile) {
+        padding-left: 0;
+    }
 }
 
 .worklist-content {
@@ -154,6 +213,13 @@ section {
     align-items: center;
     justify-content: center;
     margin-top: 20px;
+
+    @media (max-width: $screen-mobile) {
+        width: 75px;
+        height: 75px;
+        margin-right: 15px;
+        margin-top: 0;
+    }
 
     img {
         display: block;
@@ -178,8 +244,13 @@ section {
     }
 
     .worklist-item {
-        width: 100%;
-        flex-direction: column;
+        padding-left: 0;
+
+        @media (min-width: $screen-mobile) {
+            width: 100%;
+            flex-direction: column;
+            padding-left: 15px;
+        }
     }
 }
 
@@ -263,6 +334,7 @@ section {
     }
 
     .text-block {
+        padding: 0 15px;
         text-align: center;
     }
 }
@@ -305,6 +377,10 @@ section {
     text-decoration: none;
 }
 
+.contacts-address {
+    margin-bottom: 0;
+}
+
 .copy {
     font-size: 20px;
     font-weight: bold;
@@ -325,6 +401,10 @@ section {
 
 .sectionForm1-text {
     padding: 20px 15px;
+
+    @media (min-width: $screen-mobile) {
+        text-align: center;
+    }
 }
 
 .app-link-list {
@@ -355,7 +435,7 @@ section {
     padding: 0px 15px 20px 15px;
 
     .btn {
-        max-width: 90%;
+        max-width: 350px;
         display: inline-block;
     }
 
@@ -367,13 +447,25 @@ section {
 .support-park {
     display: flex;
     align-items: flex-start;
-    margin: 15px 0 20px 0;
+    margin: 20px 0 40px 0;
 
     a {
         color: $green;
         display: inline-block;
         margin-left: 10px;
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+            opacity: .8;
+        }
     }
+}
+
+.sectionForm2 {
+    margin: 0 auto;
+    max-width: 780px;
+    text-align: center;
 }
 
 .form-contacts-head {
@@ -390,31 +482,49 @@ section {
     }
 }
 
+.sectionForm3 {
+    padding: 20px 15px;
+}
+
 .form-contacts {
-    margin: 20px 15px;
+    margin: auto;
     padding: 15px;
     border: 2px solid $text-primary;
     border-radius: $border-radius;
     box-shadow: $shadow-block;
     color: $text-primary;
     font-weight: 700;
+    max-width: 620px;
 
     label {
-        font-size: 18px;
+        position: relative;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
+        font-size: 18px;
     }
 
     .btn {
-
+        max-width: 350px;
     }
+
+    .form-control {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
+.or {
+    position: absolute;
+    color: $orange;
+    bottom: -23px;
 }
 
 .call-me {
     display: flex;
     align-items: center;
+    text-align: right;
     
     a {
         display: inline-block;
@@ -428,8 +538,8 @@ section {
 .form-info-list {
     li {
         position: relative;
-        padding-left: 35px;
-        padding-bottom: 10px;
+        padding-left: 40px;
+        padding-bottom: 20px;
 
         &:before {
             content: '';
@@ -470,8 +580,10 @@ section {
 }
 
 .list-item {
-    width: 33.33%;
-    padding: 0 15px;
+    @media (min-width: $screen-mobile) {
+        padding: 0 15px;
+        width: 33.33%;
+    }
 }
 
 .owl-carousel {
