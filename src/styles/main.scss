@@ -449,11 +449,19 @@ section {
     align-items: flex-start;
     margin: 20px 0 40px 0;
 
+    @media (max-width: $screen-mobile) {
+        flex-direction: column;
+    }
+
     a {
         color: $green;
         display: inline-block;
         margin-left: 10px;
         text-decoration: none;
+
+        @media (max-width: $screen-mobile) {
+            margin: 15px 0 0 0;
+        }
 
         &:hover,
         &:focus {
@@ -512,6 +520,10 @@ section {
     .form-control {
         width: 100%;
         max-width: 350px;
+
+        @media (max-width: $screen-mobile) {
+            max-width: 200px;
+        }
     }
 }
 
@@ -524,7 +536,6 @@ section {
 .call-me {
     display: flex;
     align-items: center;
-    text-align: right;
     
     a {
         display: inline-block;
@@ -532,6 +543,7 @@ section {
         color: $primary;
         font-size: 18px;
         min-width: 200px;
+        text-align: right;
     }
 }
 
