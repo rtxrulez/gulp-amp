@@ -70,7 +70,7 @@ $(document).ready(function() {
     let url = window.location.href
     let getObj = getAllUrlParams(url)
 
-    console.log('getObj.tag1st', getObj.tag1st)
+    console.log('getObj.tag1st', getObj)
     // для первого пункта 
     if (getObj.tag1st === 'castration') {
         $('.tag1st1, .tag1st2').removeClass('active')
@@ -78,6 +78,15 @@ $(document).ready(function() {
     } else {
         $('.tag1st1, .tag1st2').removeClass('active')
         $('.tag1st1').addClass('active')
+    }
+
+    // для второго пункта
+    if (getObj.tag3d === 'cat') {
+        $('.tag3d1, .tag3d2').removeClass('active')
+        $('.tag3d2').addClass('active')
+    } else {
+        $('.tag3d1, .tag3d2').removeClass('active')
+        $('.tag3d1').addClass('active')
     }
   }
 

@@ -324,7 +324,14 @@ section {
     margin-bottom: 5px;
 }
 
-.tag1st2, .tag1st1 {
+.tag1st1, .tag1st2 {
+    display: none;
+    &.active {
+        display: block
+    }
+}
+
+.tag3d1, .tag3d2 {
     display: none;
     &.active {
         display: block
