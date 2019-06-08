@@ -838,6 +838,11 @@ section {
   color: #1D6C93;
   margin-bottom: 5px; }
 
+.tag1st2, .tag1st1 {
+  display: none; }
+  .tag1st2.active, .tag1st1.active {
+    display: block; }
+
 .section5 {
   background-color: #F2C4C4;
   color: #1D6C93; }
