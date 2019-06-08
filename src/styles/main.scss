@@ -324,15 +324,11 @@ section {
     margin-bottom: 5px;
 }
 
-.tag1st1, .tag1st2 {
+.tag1st1, .tag1st2, 
+.tag3d1, .tag3d2,
+.tagPay1, .tagPay2 {
     display: none;
-    &.active {
-        display: block
-    }
-}
-
-.tag3d1, .tag3d2 {
-    display: none;
+ 
     &.active {
         display: block
     }

@@ -70,7 +70,6 @@ $(document).ready(function() {
     let url = window.location.href
     let getObj = getAllUrlParams(url)
 
-    console.log('getObj.tag1st', getObj)
     // для первого пункта 
     if (getObj.tag1st === 'castration') {
         $('.tag1st1, .tag1st2').removeClass('active')
@@ -87,6 +86,15 @@ $(document).ready(function() {
     } else {
         $('.tag3d1, .tag3d2').removeClass('active')
         $('.tag3d1').addClass('active')
+    }
+
+    // подписка
+    if (getObj.tagpay === 'pay') {
+        $('.tagPay1, .tagPay2').removeClass('active')
+        $('.tagPay2').addClass('active')
+    } else {
+        $('.tagPay1, .tagPay2').removeClass('active')
+        $('.tagPay1').addClass('active')
     }
   }
 
