@@ -5,7 +5,10 @@ body {
     background: #fff;
 }
 
-h1,h2,h3,h4 {
+h1,
+h2,
+h3,
+h4 {
     color: $text-primary;
     font-weight: 700;
 }
@@ -77,17 +80,17 @@ section {
     background-size: cover;
     font-weight: bold;
 
-    
+
     @media (max-width: $screen-mobile) {
         min-height: calc(100vh - 65px);
     }
-    
+
     @media (min-width: $screen-mobile) {
         padding-bottom: 100px;
         background-image: url($path + '1tdesktopNoName.jpg');
     }
-    
-    > .container {
+
+    >.container {
         @media (min-width: $screen-mobile) {
             display: flex;
             flex-direction: column;
@@ -96,6 +99,7 @@ section {
             min-height: 500px;
         }
     }
+
     .btn {
         display: inline-block;
         font-size: 20px;
@@ -140,7 +144,7 @@ section {
 .btn-to-bottom {
     background: url($path + 'down.svg') no-repeat 90% center;
     background-color: white;
-    border: 1px solid $text-primary; 
+    border: 1px solid $text-primary;
     color: $text-primary;
     font-size: 20px;
     padding-right: 50px;
@@ -152,7 +156,7 @@ section {
     text-align: center;
     padding: 20px 15px;
     font-size: 26px;
-    
+
     @media (min-width: $screen-mobile) {
         padding-top: 40px;
         padding-bottom: 60px;
@@ -239,6 +243,7 @@ section {
     .worklist-content {
         min-width: 60px;
     }
+
     .worklist-head {
         padding-top: 0;
         padding-bottom: 0;
@@ -306,11 +311,12 @@ section {
             position: absolute;
             left: 0;
             top: -2px;
-            font-size:20px;
+            font-size: 20px;
             font-weight: bold;
         }
     }
-    li + li {
+
+    li+li {
         margin-top: 10px;
     }
 }
@@ -324,11 +330,14 @@ section {
     margin-bottom: 5px;
 }
 
-.tag1st1, .tag1st2, 
-.tag3d1, .tag3d2,
-.tagPay1, .tagPay2 {
+.tag1st1,
+.tag1st2,
+.tag3d1,
+.tag3d2,
+.tagPay1,
+.tagPay2 {
     display: none;
- 
+
     &.active {
         display: block
     }
@@ -553,7 +562,7 @@ section {
 .call-me {
     display: flex;
     align-items: center;
-    
+
     a {
         display: inline-block;
         text-decoration: none;
@@ -624,6 +633,7 @@ section {
         }
     }
 }
+
 .underline {
     display: inline-block;
     border-bottom: 2px solid $pink;

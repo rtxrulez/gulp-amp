@@ -549,7 +549,10 @@ body {
   font-family: "Neucha", cursive, Roboto, Arial;
   background: #fff; }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   color: #1D6C93;
   font-weight: 700; }
 
@@ -838,13 +841,19 @@ section {
   color: #1D6C93;
   margin-bottom: 5px; }
 
-.tag1st1, .tag1st2,
-.tag3d1, .tag3d2,
-.tagPay1, .tagPay2 {
+.tag1st1,
+.tag1st2,
+.tag3d1,
+.tag3d2,
+.tagPay1,
+.tagPay2 {
   display: none; }
-  .tag1st1.active, .tag1st2.active,
-  .tag3d1.active, .tag3d2.active,
-  .tagPay1.active, .tagPay2.active {
+  .tag1st1.active,
+  .tag1st2.active,
+  .tag3d1.active,
+  .tag3d2.active,
+  .tagPay1.active,
+  .tagPay2.active {
     display: block; }
 
 .section5 {
