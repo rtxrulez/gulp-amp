@@ -522,6 +522,9 @@ b {
   color: white;
   -webkit-box-shadow: 0 0.2rem 0.3rem 0 rgba(0, 0, 0, 0.3);
           box-shadow: 0 0.2rem 0.3rem 0 rgba(0, 0, 0, 0.3); }
+  .btn-success:hover, .btn-success:focus {
+    background: #009d69;
+    opacity: 1; }
 
 .owl-carousel .owl-item {
   text-align: center; }
@@ -581,7 +584,7 @@ section {
   font-size: 20px; }
   .btn-home:hover, .btn-home:focus {
     text-decoration: none;
-    opacity: .8; }
+    color: #e3593f; }
   .btn-home::before {
     content: '';
     display: block;
@@ -800,18 +803,21 @@ section {
   @media (min-width: 768px) {
     .section3 {
       padding-bottom: 60px; } }
-  .section3 .btn {
-    max-width: 220px;
-    font-size: 20px;
-    line-height: 1.1; }
 
 .section4 {
   text-align: center;
   padding-bottom: 20px; }
   .section4 img {
+    height: 75px;
     margin: 0px 15px 15px 0px; }
-  .section4 .btn {
-    max-width: 215px; }
+
+.section3 .btn,
+.section4 .btn,
+.section6 .btn {
+  margin-top: 10px;
+  max-width: 220px;
+  font-size: 20px;
+  line-height: 1.1; }
 
 .list-head {
   font-size: 20px; }
@@ -941,6 +947,9 @@ section {
 .leave-contacts {
   text-align: center;
   margin-top: -30px; }
+  .leave-contacts .btn-yellow {
+    background: #F8DA69;
+    opacity: 1; }
 
 .sectionForm2 {
   padding: 0px 15px 20px 15px; }

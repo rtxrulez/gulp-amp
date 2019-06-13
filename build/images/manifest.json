@@ -1,0 +1,16 @@
+{
+    "name": "Affy",
+    "short_name": "Affy",
+    "display": "standalone",
+    "start_url": "/",
+    "lang": "ru-RU",
+    "icons": [
+        {
+            "src": "favicon.png",
+            "sizes": "48x48",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#1D6C93",
+    "background_color": "#ffffff"
+}

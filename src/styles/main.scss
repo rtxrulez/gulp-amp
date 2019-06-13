@@ -41,7 +41,7 @@ section {
     &:hover,
     &:focus {
         text-decoration: none;
-        opacity: .8;
+        color: $primary-hover;
     }
 
     &::before {
@@ -272,12 +272,6 @@ section {
     @media (min-width: $screen-mobile) {
         padding-bottom: 60px;
     }
-
-    .btn {
-        max-width: 220px;
-        font-size: 20px;
-        line-height: 1.1;
-    }
 }
 
 .section4 {
@@ -285,11 +279,19 @@ section {
     padding-bottom: 20px;
 
     img {
+        height: 75px;
         margin: 0px 15px 15px 0px;
     }
+}
 
+.section3,
+.section4,
+.section6 {
     .btn {
-        max-width: 215px;
+        margin-top: 10px;
+        max-width: 220px;
+        font-size: 20px;
+        line-height: 1.1;
     }
 }
 
@@ -453,6 +455,11 @@ section {
 .leave-contacts {
     text-align: center;
     margin-top: -30px;
+
+    .btn-yellow {
+        background: $yellow;
+        opacity: 1;
+    }
 }
 
 .sectionForm2 {
