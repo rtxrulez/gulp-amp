@@ -761,15 +761,6 @@ section {
   padding: 20px 15px;
   font-size: 18px;
   font-weight: normal; }
-  @media (min-width: 768px) {
-    .worklist-head {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      text-align: center; } }
   @media (max-width: 768px) {
     .worklist-head {
       padding-left: 0; } }
@@ -833,6 +824,9 @@ section {
   background: url("../images/bg-gray.png") repeat center;
   text-align: center;
   padding-bottom: 20px; }
+  @media (max-width: 768px) {
+    .section3 {
+      background-image: url("../images/bg-gray-mobile.png"); } }
   @media (min-width: 768px) {
     .section3 {
       padding-bottom: 60px; } }
