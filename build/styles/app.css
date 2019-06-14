@@ -611,7 +611,16 @@ section {
 
 .header {
   padding: 10px 15px;
-  min-height: 65px; }
+  min-height: 65px;
+  background: transparent;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-width: 100%;
+  z-index: 1; }
   .header .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -622,6 +631,21 @@ section {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
+
+.bg-white {
+  background: white; }
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+  -webkit-box-shadow: 0 0.2rem 0.6rem 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.2rem 0.6rem 0 rgba(0, 0, 0, 0.1); }
+
+.header + section {
+  padding-top: 90px; }
 
 .section-first {
   padding: 20px 15px;
@@ -664,7 +688,7 @@ section {
     .section-first {
       text-align: center;
       min-height: 630px;
-      padding: 60px 15px 15px 15px; } }
+      padding: 90px 15px 15px 15px; } }
 
 .section-header {
   font-size: 32px;
@@ -955,7 +979,7 @@ section {
 
 .leave-contacts {
   text-align: center;
-  margin-top: -30px; }
+  margin-top: -23px; }
   .leave-contacts .btn-yellow {
     background: #F8DA69;
     opacity: 1; }

@@ -65,6 +65,14 @@ section {
 .header {
     padding: 10px 15px;
     min-height: 65px;
+    background: transparent;
+    transition: all .3s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-width: 100%;
+    z-index: 1;
 
     .container {
         display: flex;
@@ -75,6 +83,23 @@ section {
     // .btn-light {
     //     box-shadow: none
     // }
+}
+
+.bg-white {
+    background: white;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: white;
+    box-shadow: 0 0.2rem 0.6rem 0 rgba(0,0,0,0.1);
+}
+
+.header + section {
+    padding-top: 90px;
 }
 
 .section-first {
@@ -118,7 +143,7 @@ section {
     @media (min-width: $screen-mobile) {
         text-align: center;
         min-height: 630px;
-        padding: 60px 15px 15px 15px;
+        padding: 90px 15px 15px 15px;
     }
 }
 
@@ -458,7 +483,7 @@ section {
 
 .leave-contacts {
     text-align: center;
-    margin-top: -30px;
+    margin-top: -23px;
 
     .btn-yellow {
         background: $yellow;
@@ -656,3 +681,4 @@ section {
         white-space: normal;
     }
 }
+
