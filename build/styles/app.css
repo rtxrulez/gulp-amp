@@ -492,7 +492,9 @@ b {
       -ms-user-select: none;
           user-select: none;
   text-decoration: none;
-  border: 0; }
+  border: 0;
+  -webkit-transition: all .2s;
+  transition: all .2s; }
 
 .btn:hover,
 .btn:focus {
@@ -504,6 +506,9 @@ b {
   -webkit-box-shadow: 0 0.2rem 0.3rem 0 rgba(0, 0, 0, 0.3);
           box-shadow: 0 0.2rem 0.3rem 0 rgba(0, 0, 0, 0.3);
   border: 0.1rem solid #0000; }
+  .btn-primary:hover, .btn-primary:focus {
+    opacity: 1;
+    background-color: #e3593f; }
 
 .btn-light {
   background-color: transparent;
@@ -511,6 +516,10 @@ b {
   border: 1px solid #1D6C93;
   -webkit-box-shadow: 0 0.2rem 0.3rem 0 rgba(0, 0, 0, 0.3);
           box-shadow: 0 0.2rem 0.3rem 0 rgba(0, 0, 0, 0.3); }
+  .btn-light:hover, .btn-light:focus {
+    opacity: 1;
+    background-color: #f2f2f2;
+    color: #1D6C93; }
 
 .btn-yellow {
   background: #F8DA69;
@@ -617,9 +626,6 @@ section {
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse; }
-  .header .btn-light {
-    -webkit-box-shadow: none;
-            box-shadow: none; }
 
 .section-first {
   padding: 20px 15px;
